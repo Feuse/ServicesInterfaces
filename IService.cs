@@ -9,7 +9,7 @@ namespace ServicesInterfaces
 {
     public interface IService
     {
-        public Task<string> AppStartUp(Data data);
+        public Task<Data> AppStartUp(Data data);
         public Task<List<string>> GetEncounters(Data data);
         public Task<int> Like(Data data);
         public Task<string> UpdateAboutMe(Data data);
