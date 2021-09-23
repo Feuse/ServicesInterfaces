@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
-using RabbitMQScheduler.Models;
 using ServicesModels;
 using System;
 using System.Collections.Generic;
