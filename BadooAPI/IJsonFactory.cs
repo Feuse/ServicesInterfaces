@@ -1,13 +1,13 @@
-﻿using System;
+﻿using ServicesModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-
 using System.Threading.Tasks;
 
 namespace ServicesInterfaces
 {
-    public interface IConfig
+    public interface IJsonFactory
     {
+        public dynamic GetJson(JsonTypes types);
     }
 }
