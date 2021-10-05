@@ -1,8 +1,10 @@
 ﻿using Newtonsoft.Json;
+using ServicesModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,6 +37,7 @@ namespace ServicesInterfaces.Global
         public string Provider { get; set; }
         [JsonProperty("quartz.serializer.type")]
         public string Type { get; set; }
-
+        string AMQP_URL { get; set; }
+        public Redis Redis { get; set; }
     }
 }

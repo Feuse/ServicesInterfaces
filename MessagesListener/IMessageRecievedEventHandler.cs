@@ -10,7 +10,6 @@ namespace ServicesInterfaces
 {
     public interface IMessageRecievedEventHandler
     {
-        public IModel _channel { get; }
-        public void ConsumeMessage(object model, BasicDeliverEventArgs ea);
+        public void RegisterToQueueEvent();
     }
 }

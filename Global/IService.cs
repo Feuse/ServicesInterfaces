@@ -1,5 +1,6 @@
 ﻿using ServicesInterfaces.Global;
 using ServicesModels;
+using ServicesModels.BadooAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace ServicesInterfaces
     {
         public Task<Data> AppStartUp(Data data);
         public Task<List<string>> GetEncounters(Data data);
-        public Task<int> Like(Data data);
+        public Task<MessageState> Like(Data data);
         public Task<string> UpdateAboutMe(Data data);
         public Task<IDictionary<string, string>> GetImages(Data data);
         public Task<IDictionary<string, string>> RemoveImage(Data data);
